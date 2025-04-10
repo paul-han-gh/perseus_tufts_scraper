@@ -1,0 +1,15 @@
+[project]
+name = "perseus_tufts_scraper"
+version = "0.1.0"
+description = "Default template for PDM package"
+authors = [
+    {name = "Paul Han", email = "paulh@dtric.com"},
+]
+dependencies = ["Scrapy>=2.12.0"]
+requires-python = "==3.12.*"
+readme = "README.md"
+license = {text = "MIT"}
+
+
+[tool.pdm]
+distribution = false
