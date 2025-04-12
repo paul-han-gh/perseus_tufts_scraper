@@ -1,12 +1,16 @@
-# Define here the models for your scraped items
-#
-# See documentation in:
-# https://docs.scrapy.org/en/latest/topics/items.html
-
-import scrapy
+from dataclasses import dataclass
 
 
-class PerseusTuftsScraperItem(scrapy.Item):
-    # define the fields for your item here like:
-    # name = scrapy.Field()
-    pass
+@dataclass
+class Book():
+    text_id: str
+    book_number: int
+    percentage_of_text: float
+
+@dataclass
+class Card():
+    text_id: str
+    book_number: int
+    first_line: int
+    last_line: int
+    percentage_of_book: float
